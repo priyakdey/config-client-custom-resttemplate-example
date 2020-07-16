@@ -1,0 +1,11 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      enabled: false
+      name: test-client
+      uri: http://localhost:8888
+config-server:
+  username: ${config-server.username}
+  password: ${config-server.password}
